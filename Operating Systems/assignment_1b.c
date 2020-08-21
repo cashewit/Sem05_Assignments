@@ -9,5 +9,9 @@ Implement the fork() system call and print the parent and child ID in C.
 int main() {
     int pid = fork();
 
-    printf("Process Id: %d\n", getpid());
+    if(pid == 0) {
+        printf("Child Process Id: %d\n", getpid());
+    } else {
+        printf("Parent Process Id: %d\n", getpid());
+    }
 }
