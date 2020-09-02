@@ -1,3 +1,6 @@
+// Creating threads in fork calls.
+// Shows that pthread variables created in fork calls have the same thread id.
+
 #include <stdio.h> 
 #include <stdlib.h> 
 #include <unistd.h>
